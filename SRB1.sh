@@ -1,5 +1,5 @@
 apt update
-apt -y install nano wget htop binutils cmake build-essential screen unzip net-tools curl
+apt -y install nano wget htop binutils cmake build-essential screen unzip net-tools curl cpulimit
 
 unset LD_PRELOAD
 unset LD_LIBRARY_PATH
