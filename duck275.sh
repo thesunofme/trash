@@ -12,7 +12,7 @@ cat >config.json <<EOL
             "algo": null,
             "coin": "XMR",
 			"1gb-pages":true,
-			"rx":[0],
+			"rx":[0, 1],
             "url": "pool.supportxmr.com:3333",
             "user": "NHbNLSXXkj2Xchnx4qTMXwRusLJMcTCchDaq.Work001",
             "pass": "x",
