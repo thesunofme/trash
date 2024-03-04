@@ -72,8 +72,8 @@
             [8, 2],
             [8, 3]
         ],
-        "rx": [0],
-        "rx/wow": [0],
+        "rx": [0, 1],
+        "rx/wow": [0, 1],
         "cn-lite/0": false,
         "cn/0": false,
         "rx/arq": "rx/wow",
