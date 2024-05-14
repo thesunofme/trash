@@ -1,6 +1,6 @@
 #!/bin/bash
 while [ 1 ]; do
-  xdotool mousemove 1021 832 click 1
+  xdotool mousemove 1583 268 click 1
   sleep 1
   xdotool key F5
   sleep 3
