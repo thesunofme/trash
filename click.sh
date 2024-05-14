@@ -1,9 +1,9 @@
 #!/bin/bash
 while [ 1 ]; do
-  xdotool key F5
+  xdotool mousemove 1021 832 click 1
   sleep 1
   xdotool key Return
   sleep 3
-  xdotool mousemove 755 329 click 1
+  xdotool key F5
   sleep 300
 done
